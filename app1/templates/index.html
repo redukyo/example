@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>This is Index</h1>
+    <hr/>
+    Hello, World!
+    <hr/>
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+    {% else %}
+        <a href="/login"><input type="button" value="login" /></a>
+        <a href="/join"><input type="button" value="join" /></a>
+    {% endif %}
+</body>
+</html>
